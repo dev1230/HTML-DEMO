@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" class="modal-is-open modal-is-opening">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="./css/pico.min.css">
+    <!--link rel="stylesheet" href="./css/pico.classless.min.css"-->
+    <title>Modal</title>
+  </head>
+  <body>
+  
+    <!-- Button to trigger the modal -->
+    <button class="contrast" data-target="modal-example" onClick="toggleModal(event)">
+    Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <dialog id="modal-example">
+        <article>
+        <a href="#close"
+            aria-label="Close"
+            class="close"
+            data-target="modal-example"
+            onClick="toggleModal(event)">
+        </a>
+        <h3>Confirm your action!</h3>
+        <p>
+            Cras sit amet maximus risus. 
+            Pellentesque sodales odio sit amet augue finibus pellentesque. 
+            Nullam finibus risus non semper euismod.
+        </p>
+        <footer>
+            <a href="#cancel"
+            role="button"
+            class="secondary"
+            data-target="modal-example"
+            onClick="toggleModal(event)">
+            Cancel
+            </a>
+            <a href="#confirm"
+            role="button"
+            data-target="modal-example"
+            onClick="toggleModal(event)">
+            Confirm
+            </a>
+        </footer>
+        </article>
+    </dialog>
+  </body>
+</html>
